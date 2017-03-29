@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>Servlets</display-name>
+    <description>Sample servlets</description>
+
+    <servlet>
+        <servlet-name>HTMLMsg</servlet-name>
+        <servlet-class>controller.Msg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HTMLMsg</servlet-name>
+        <url-pattern>/msg</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Msg2</servlet-name>
+        <servlet-class>controller.Msg2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Msg2</servlet-name>
+        <url-pattern>/paths</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Test</servlet-name>
+        <servlet-class>controller.Test</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Test</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Form</servlet-name>
+        <servlet-class>controller.Form</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Form</servlet-name>
+        <url-pattern>/form</url-pattern>
+    </servlet-mapping>
+
+</web-app>
