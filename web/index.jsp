@@ -14,7 +14,7 @@
 <body>
 <h2>Sum two elements</h2>
 <hr>
-<form method="get" action="http://localhost:8080/form">
+<form method="get" action="http://localhost:8080/formmvc">
   p1<input type="text" size="50" name="p1"><br>
   p2<input type="text" size="50" name="p2"><br>
 
@@ -22,7 +22,7 @@
   <br><input type="submit" value="Send get">
 </form>
 
-<form method="post" action="http://localhost:8080/form">
+<form method="post" action="http://localhost:8080/formmvc">
   p3<input type="text" size="50" name="p3"><br>
   p4<input type="text" size="50" name="p4"><br>
 
