@@ -7,32 +7,7 @@
     <display-name>Servlets</display-name>
     <description>Sample servlets</description>
 
-    <servlet>
-        <servlet-name>HTMLMsg</servlet-name>
-        <servlet-class>controller.Msg</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>HTMLMsg</servlet-name>
-        <url-pattern>/msg</url-pattern>
-    </servlet-mapping>
 
-    <servlet>
-        <servlet-name>Msg2</servlet-name>
-        <servlet-class>controller.Msg2</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Msg2</servlet-name>
-        <url-pattern>/paths</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>Test</servlet-name>
-        <servlet-class>controller.Test</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Test</servlet-name>
-        <url-pattern>/test</url-pattern>
-    </servlet-mapping>
     <servlet>
         <servlet-name>Form</servlet-name>
         <servlet-class>controller.Form</servlet-class>

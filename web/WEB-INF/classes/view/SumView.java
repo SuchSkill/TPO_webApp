@@ -23,5 +23,6 @@ public class SumView extends HttpServlet {
         out.println(model.getResult());
         System.out.println(model.getResult());
 
+
     }
 }

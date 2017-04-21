@@ -44,6 +44,7 @@ public class FormMVC extends HttpServlet {
         while (pnams.hasMoreElements()) {
             String name = (String) pnams.nextElement();
             String value = req.getParameter(name);
+            System.out.println(value);
             try {
                 args.add(Integer.parseInt(value));
             } catch (NumberFormatException e) {

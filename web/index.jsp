@@ -9,24 +9,16 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <script type="text/javascript" language="javascript" src="ajaxValidation.js"></script>
   <title>Sum</title>
 </head>
 <body>
 <h2>Sum two elements</h2>
 <hr>
-<form method="get" action="http://localhost:8080/formmvc">
-  p1<input type="text" size="50" name="p1"><br>
-  p2<input type="text" size="50" name="p2"><br>
+  p1<input id="p1" type="text" size="50" name="p1" onblur="validate()"><br>
+  p2<input id="p2" type="text" size="50" name="p2" onblur="validate()"><br>
 
-  _
-  <br><input type="submit" value="Send get">
-</form>
 
-<form method="post" action="http://localhost:8080/formmvc">
-  p3<input type="text" size="50" name="p3"><br>
-  p4<input type="text" size="50" name="p4"><br>
+<div id="msg"></div>
 
-  _
-  <br><input type="submit" value="Send post">
-</form>
 </body></html>
