@@ -5,8 +5,20 @@ package model;
  */
 public class SumResult {
     private int result;
+    private boolean isOkay = true;
 
-    public SumResult(int result) {
+    public boolean isOkay() {
+        return isOkay;
+    }
+
+    public void setOkay(boolean okay) {
+        isOkay = okay;
+    }
+
+    public SumResult(Integer result) {
+        if (result == null)
+            isOkay = false;
+
         this.result = result;
     }
 

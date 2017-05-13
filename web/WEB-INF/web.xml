@@ -39,4 +39,33 @@
         <exception-type>java.lang.Throwable</exception-type>
         <location>/ErrorHandler</location>
     </error-page>
+
+
+
+    <filter>
+        <filter-name>HeaderFilter</filter-name>
+        <filter-class>filters.HeadFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>HeaderFilter</filter-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </filter-mapping>
+
+
+    <filter>
+        <filter-name>FooterFilter</filter-name>
+        <filter-class>filters.FooterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FooterFilter</filter-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>listeners.ContextListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>listeners.RequestListener</listener-class>
+    </listener>
+
 </web-app>

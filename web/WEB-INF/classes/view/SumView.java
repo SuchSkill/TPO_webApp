@@ -19,10 +19,16 @@ public class SumView extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = req.getSession();
         SumResult model = (SumResult) session.getAttribute("model");
-        PrintWriter out = resp.getWriter();
-        out.println(model.getResult());
-        System.out.println(model.getResult());
-
+        if (model.isOkay()) {
+            PrintWriter out = resp.getWriter();
+            out.println(model.getResult());
+            System.out.println("result in view " + model.getResult());
+        }else
+        {
+            PrintWriter out = resp.getWriter();
+            out.println("invalid");
+            System.out.println("result in view invalid");
+        }
 
     }
 }

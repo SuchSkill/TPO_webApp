@@ -48,8 +48,8 @@ public class FormMVC extends HttpServlet {
             try {
                 args.add(Integer.parseInt(value));
             } catch (NumberFormatException e) {
-                e.printStackTrace();
-                throw new IllegalArgumentException();
+                System.out.println("wrong args");
+                //e.printStackTrace();
             }
 
         }
